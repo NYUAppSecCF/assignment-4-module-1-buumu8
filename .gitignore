@@ -1,1 +1,18 @@
 .idea
+
+# Built application files
+*.apk
+*.ap_
+*.dex
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (Important!)
+local.properties
+
+# Android Studio generated files
+.idea/
+*.iml
+.DS_Store
