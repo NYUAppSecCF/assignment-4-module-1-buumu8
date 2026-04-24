@@ -8,8 +8,7 @@ on:
 
 jobs:
   build:
-    # runs-on: self-hosted
-    runs-on: ubuntu-20.04 # Temporary workaround for missing self-hosted runners
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
