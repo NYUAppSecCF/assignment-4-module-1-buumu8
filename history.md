@@ -35,3 +35,7 @@
    Run gpg --list-secret-keys in PowerShell to confirm your keys are present.
    Gist
    Gist
+
+## Git commands
+
+git commit -S -m "commit message"
