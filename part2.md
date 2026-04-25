@@ -97,3 +97,5 @@ var intent = Intent(activity, ProductScrollingActivity::class.java)
 - If exported="true": Any app on the device can start this activity. If that activity handles sensitive data (like a User object or a specific card ID), an attacker can craft an intent to launch it directly, potentially causing your app to crash or perform unauthorized actions.
 
 - If exported="false": Only your app's package (and the Android system itself) can launch the activity. This effectively isolates your internal logic from malicious interference.
+
+- In the past, exported defaulted to true if an intent-filter was present. Modern Android linting tools get nervous when they see an activity that might have been intended for external use suddenly locked down, as it can sometimes break "Deep Linking." By adding tools:ignore, you are documenting that this change was intentional for security reasons.
